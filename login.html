@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font_style.css">
+    <style>
+        body{
+            display: flex;
+            width: 100%;
+            height: 100dvh;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(25, 155, 215);
+        }
+        .wrap{
+            width: 300px;
+            height: 400px;
+            background-color: #222;
+            position: relative;
+            border-radius: 10%;
+        }
+        
+
+        .wrap .input_box{
+            font-weight: 600;
+            font-size: 24px;
+            width: 80%;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%,-50%);
+            margin-top: 20px;
+            border-bottom: 1px solid rgb(25, 155, 215);
+            background:transparent;
+            outline: none;
+            color: rgb(25, 155, 215);
+        }
+
+        .wrap .btn{
+            color: rgb(25, 155, 215);
+            background-color: #222;
+            border: 1px solid rgb(25, 155, 215);
+            position: absolute;
+            width: 60%;
+            padding: 10px 20px;
+            left: 0;right: 0;
+            margin: auto;
+            bottom: 20%;
+            transition: background-color 0.3s
+                        ,color 0.8s;
+        }
+
+        .wrap .btn:hover{
+            background-color: #eee;
+        }
+
+        h1{
+            color: rgb(25, 155, 215);
+            margin: 20px 0;
+            text-align: center;
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>LOGO</h1>
+        <form action="">
+            <input class="input_box" type="text" placeholder="Username">
+            <input class="input_box" type="password" placeholder="Password">
+            <input class="btn" type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
