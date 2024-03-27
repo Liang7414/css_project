@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font_style.css">
+    <style>
+
+        body{
+            background-color: rgba(204, 131, 29, 0.718);
+        }
+
+        .header{
+            width: 100%;
+            background-color: rgb(132, 75, 10);
+            padding: 10px 0;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            position: fixed;
+            top: 0; left: 0;
+            z-index: 1;
+        }
+
+        .header h2{
+            padding:0 10px;
+            color: rgba(255, 255, 255, 0.718);
+            font-size: 2em;
+        }
+
+        .header nav{
+            font-size: 0;
+        }
+
+        .header nav a{
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.718);
+            padding: 15px 30px;
+            transition: background-color 0.5s,
+                        text-decoration 1.5s;
+        }
+
+        .header nav .link a:hover{
+            background-color: rgba(255, 255, 255, 0.718);
+            color: rgb(132, 75, 10);
+            text-decoration: underline rgb(132, 75, 10);
+        }
+
+
+        .header nav .Login{
+            font-size: 24px;
+            padding: 5px 10px;
+            margin: 0 10px 0 20px;
+            border: solid 2px  rgba(255, 255, 255, 0.718);
+            border-radius: 10%;
+            color: rgba(255, 255, 255, 0.718);
+            transition: 1s;
+        }
+
+        .header nav .Login:hover{
+            padding: 10px 20px;
+            margin-left: 0;
+        }
+
+
+        .banner{
+            position: relative;
+            top: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            box-sizing: border-box;
+            padding: 10px;
+            position: relative;
+            top: 30px;
+            width: 33%;
+            display: inline-block;
+            margin-top: 10px;
+            text-align: center;
+            background-color: rgb(132, 75, 10);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Logo</h2>
+        <nav>
+            <span class="link">
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+            </span>
+            <a class="Login" href="login.html">Login</a>
+        </nav>
+    </div>
+    <div class="banner">
+        <img  src="https://picsum.photos/800/600" alt="">
+    </div>
+
+    <div class="container">
+        <img src="https://picsum.photos/300/300" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non illum sunt assumenda id quod qui accusamus cum rerum eaque! Minus necessitatibus eligendi dicta hic ut omnis porro obcaecati culpa deserunt!</p>
+    </div>
+    <div class="container">
+        <img src="https://picsum.photos/300/300" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non illum sunt assumenda id quod qui accusamus cum rerum eaque! Minus necessitatibus eligendi dicta hic ut omnis porro obcaecati culpa deserunt!</p>
+    </div>
+    <div class="container">
+        <img src="https://picsum.photos/300/300" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non illum sunt assumenda id quod qui accusamus cum rerum eaque! Minus necessitatibus eligendi dicta hic ut omnis porro obcaecati culpa deserunt!</p>
+    </div>
+</body>
+</html>
